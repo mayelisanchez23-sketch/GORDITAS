@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 
 const GUISOS = ['Rajas','Champiñones','Chorizo','Moronga','Nopales','Salchicha','Deshebrada','Huevo verde','Huevo rojo','Chicharrón verde','Chicharrón rojo','Papas','Queso','Frijoles','Picadillo','Papas con chorizo']
-const PRECIOS = { Gordita:16, Sope:35, Huarache:55, Café:15, Refresco:20, Agua:20, Menudo:150 }
 const OPCIONES = ['Gordita','Sope','Huarache','Agua','Café','Menudo','Refresco']
 const dinero = n => new Intl.NumberFormat('es-MX',{style:'currency',currency:'MXN'}).format(n)
 const nuevoId = () => crypto.randomUUID()
