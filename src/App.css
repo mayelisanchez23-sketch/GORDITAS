@@ -59,3 +59,21 @@ body{background:linear-gradient(150deg,#f6efe2 0%,#fcfaf5 42%,#f1e9db 100%);colo
 .estado-espera{background:#fff9ef}.estado-proceso{background:#fff0bf}.estado-lista{background:#e5f4e4}
 .pie{color:#71695d}
 @media(max-width:720px){.cabecera{border-radius:0;margin:0}.pestanas{gap:6px}.pestanas button{flex-grow:1;padding:10px}.cobroDivisiones{grid-template-columns:1fr}}
+
+/* v6: botones táctiles y tarjetas compactas */
+.boton-mesa{padding:7px 3px;min-height:46px;font-size:inherit;line-height:1.1}
+.boton-mesa small{margin-top:3px}
+.rejilla-mesas{gap:6px;margin:9px 0}
+.botonesJuntos button{padding:8px 10px;border:1px solid #cad9cc;border-radius:9px;background:#edf5e9;color:#24553f;font-weight:700}
+.botonera{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 12px}
+.botonera button{border:1px solid #d9e4d6;background:#fffdf6;color:#234b39;padding:9px 12px;border-radius:9px;font-weight:750;min-height:38px;cursor:pointer}
+.botonera button.activo{background:#215d46;color:white;border-color:#215d46}
+.botonera button:hover{border-color:#39835c}
+.guisosMenu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}
+.guisosMenu button{padding:8px 4px;font-size:12px;min-width:0}
+.opciones{margin:10px 0}.opciones>strong{font-size:13px;color:#235740}
+.menuAccion{display:flex;align-items:flex-end;gap:10px;margin:14px 0 0;padding-top:10px;border-top:1px solid #e9e1d4}
+.menuAccion label{flex:1;min-width:0;margin:0!important}.menuAccion label input{margin-top:6px}
+.menuAccion button{flex-shrink:0;min-height:45px}
+.menuCaptura{padding:17px}
+@media(max-width:540px){.menuAccion{flex-wrap:wrap}.menuAccion button{width:100%}.guisosMenu{grid-template-columns:repeat(2,minmax(0,1fr))}}

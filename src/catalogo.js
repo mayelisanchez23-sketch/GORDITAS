@@ -15,6 +15,7 @@ export function prepararProducto(f){
  if(['Gordita','Gorda sin comida','Plato de comida'].includes(tipo))ruta='gorditas'
  if(tipo.startsWith('Sope'))ruta='sopes'
  if(tipo==='Huarache')ruta='huarache'
+ if(['Agua','Café','Refresco','Menudo'].includes(tipo))ruta='bebidas'
  if(tipo.startsWith('Sope')||tipo==='Huarache'){
   if(dorado!=='Normal')detalle.push(dorado.toLowerCase())
   if(grasa==='Sin grasa')detalle.push('sin grasa')
