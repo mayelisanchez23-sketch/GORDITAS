@@ -19,3 +19,43 @@
 .estado-cancelada{background:#fbe0e0;border:2px solid #dfaaaa}
 .estado-cerrada{background:#e5e7eb;border:2px solid #b8bec7}
 @media(max-width:750px){.soloDos{grid-template-columns:1fr}}
+
+/* v5: paleta cálida y estructura uniforme de operación */
+:root{--verde:#145c48;--verde-oscuro:#104b3b;--verde-claro:#e2f2e6;--crema:#fbf7ef;--beige:#f2e8d7;--tinta:#213d32;--borde:#e7ded0}
+body{background:linear-gradient(150deg,#f6efe2 0%,#fcfaf5 42%,#f1e9db 100%);color:var(--tinta)}
+.aplicacion{min-height:100vh}
+.cabecera{max-width:1540px;margin:10px auto 0;border-radius:19px;background:linear-gradient(110deg,#15563f,#20765e 63%,#124835);padding:24px 32px;box-shadow:0 12px 32px #184d3a21}
+.cabecera h1{font-size:25px}.cabecera p{margin-bottom:0}
+.contenedor{max-width:1540px;margin:18px auto}
+.franja{padding:9px 15px;background:#fffcf5;border:1px solid var(--borde);border-radius:13px}
+.pestanas{padding:10px;border-radius:16px;background:#eae9de;gap:7px}
+.pestanas button{border:1px solid #d9e2d9;background:#fffdf7;color:#245343;border-radius:12px;padding:13px 16px;transition:background .12s, transform .12s}
+.pestanas button:hover{background:#e3f2e7;transform:translateY(-1px)}
+.pestanas button.seleccionado{background:linear-gradient(120deg,#205d47,#2a805f);border-color:transparent;color:white;box-shadow:0 5px 12px #1b5d402c}
+.tarjeta{background:#fffdfa;border:1px solid #e8dfd4;border-radius:19px;box-shadow:0 8px 22px #4d41250c}
+.tarjeta h2{color:#144c3c;font-weight:800}
+.tarjeta h3{color:#225b46}
+.principal{background:linear-gradient(120deg,#1b5d44,#357a51);border-radius:11px;box-shadow:0 5px 10px #185b3721}
+.principal:hover{background:#164832}
+.ligero{background:#eaf5e9}
+.boton-mesa{background:linear-gradient(#f8f9f2,#f1f4e8);border-color:#e6e9dd}
+.boton-mesa.activo{background:#236c53;color:white;border-color:#195b44}
+.boton-mesa small{font-weight:650}
+.comanda,.ticket{background:#fffef9;border-color:#e9dfcd}
+.comandaCocina{background:#fffdf6;border:2px solid #d7e4d8}
+.comandaCocina>strong{color:#145642;font-size:23px}
+.lecturaGrande .renglonComanda{font-size:28px}
+.division{border-top-color:#d7e0d3}
+.cobroDivisiones{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:11px;margin:16px 0}
+.cobroDivision{display:flex!important;align-items:center;gap:12px;margin:0!important;padding:15px!important;border:1px solid #dce4d6;background:#fbfff8;border-radius:13px;cursor:pointer}
+.cobroDivision input{width:22px!important;height:22px;accent-color:#256f4d}
+.cobroDivision span{display:grid;gap:6px}.cobroDivision small{font-weight:500;color:#647568}
+.pagoFila{padding:10px;background:#f8f8f0;border-radius:9px}
+.reapertura{padding:14px 0;display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap;border-bottom:1px solid #e6dfd4}
+.reapertura button{flex-shrink:0}
+.adminCuenta{background:#fffcf5;border-color:#eadfca}
+.indicadores>div{background:#eff4e9}
+.grupoSeguimiento{border-top-color:#dfdacb}
+.estado-espera{background:#fff9ef}.estado-proceso{background:#fff0bf}.estado-lista{background:#e5f4e4}
+.pie{color:#71695d}
+@media(max-width:720px){.cabecera{border-radius:0;margin:0}.pestanas{gap:6px}.pestanas button{flex-grow:1;padding:10px}.cobroDivisiones{grid-template-columns:1fr}}
